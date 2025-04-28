@@ -30,6 +30,11 @@ app.post("/print", (req, res) => {
 
     printReceipt(req.body);
 
+    setTimeout(() => {
+      console.log("Printing second copy of receipt");
+      printReceipt(req.body);
+    }, 5000);
+
     res.json({ status: "success" });
   } catch (error) {
     console.error("Print error:", error);
