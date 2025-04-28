@@ -1,0 +1,4 @@
+Superuser account and POS account
+
+email:coftea@gmail.com
+password:coftea042025
